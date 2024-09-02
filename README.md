@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://your-solution-url.com)
-- Live Site URL: [Demo](https://github.com/Gnandal/four-card-feature-section-master)
+- Solution URL: [Github Repo](https://github.com/Gnandal/four-card-feature-section-master)
+- Live Site URL: [Demo](https://gnandal.github.io/four-card-feature-section-master/)
 
 ## My process
 
