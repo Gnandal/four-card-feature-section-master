@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,300&display=swap');
+
+:root {
+    --color-red: hsl(0, 78%, 62%);
+    --color-cyan: hsl(180, 62%, 55%);
+    --color-blue: hsl(212, 86%, 64%);
+    --color-orange: hsl(34, 97%, 64%);
+    --color-white: hsl(0, 0%, 100%);
+
+    --color-very-dark-blue: hsl(234, 12%, 34%);
+    --color-grayish-blue: hsl(229, 6%, 66%);
+    --color-very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+
+    color: var(--color-very-dark-blue);
+
+    background-color: var(--color-cream);
+
+    height: 100vh;
+    max-width: 1200px;
+
+    margin: auto;
+    padding-top: 5rem;
+
+    overflow-y: scroll;
+}
+
+
+header {
+    text-align: center;
+}
+
+h1 span {
+    font-weight: 200;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "left center-top rigth"
+        "left center-bottom rigth";
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+
+    margin-top: 5rem;
+}
+
+.left {
+    grid-area: left;
+    border-color: var(--color-cyan);
+}
+
+.center-top {
+    grid-area: center-top;
+    border-color: var(--color-red);
+}
+
+.center-bottom {
+    grid-area: center-bottom;
+    border-color: var(--color-orange);
+}
+
+.rigth {
+    grid-area: rigth;
+    border-color: var(--color-blue);
+}
+
+main>div {
+    background-color: var(--color-white);
+    -webkit-box-shadow: 0px 6px 25px -10px var(--color-very-dark-blue);
+    -moz-box-shadow: 0px 6px 25px -10px var(--color-very-dark-blue);
+    box-shadow: 0px 6px 25px -10px var(--color-very-dark-blue);
+
+    padding: 2rem;
+    border-radius: 5px;
+    border-top: 5px solid;
+}
+
+main>div>img {
+    float: right;
+    margin-top: 1rem;
+}
